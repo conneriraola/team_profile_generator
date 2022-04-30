@@ -1,17 +1,17 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateHTML = require('./src/generateHTML.js')
-const Employee = require ('.lib/Employee.js');
-const Engineer = require ('.lib/Engineer.js');
-const Manager = require ('.lib/Manager.js');
-const Intern = require ('.lib/Intern.js');
+const generateHTML = require('./src/generateHTML')
+const Employee = require ('./lib/Employee');
+const Engineer = require ('./lib/Engineer');
+const Manager = require ('./lib/Manager');
+const Intern = require ('./lib/Intern');
 
 let managers = [];
 let engineers = [];
 let interns = [];
 
 let questions = employeeData => {
-    return inqquirer.prompt ([
+    return inquirer.prompt ([
         {
             type: "list",
             name: "employeeType",
@@ -56,8 +56,8 @@ let questions = employeeData => {
         },
         {
             type: "input",
-            name: "email",
-            message: "Enter officer number:",
+            name: "office",
+            message: "Enter office number:",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -108,7 +108,7 @@ let questions = employeeData => {
         }
         if (answerData.employeeType === "Intern") {
             let intern = new Intern (answerData.name, answerData.id, answerData.email, answerData.office, answerData.school);
-            intern.push(intern);
+            interns.push(intern);
         }
         if (answerData.confirmAnotherEmployee) {
             return questions(employeeData);

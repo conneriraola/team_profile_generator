@@ -1,7 +1,7 @@
 function generateHTML (managers, engineers, interns) {
     managerArr = managers;
     engineerArr = engineers;
-    internArr - interns;
+    internArr = interns;
 
     return `
     <!DOCTYPE html>
