@@ -9,7 +9,7 @@ Task is to build a Node.js command-line application that takes in information ab
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributors](#contributors)
+* [Screenshot](#screenshot)
 * [Testing](#testing)
 * [Questions](#questions)
     

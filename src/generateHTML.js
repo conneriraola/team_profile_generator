@@ -50,9 +50,9 @@ function generateManagerCards (managersArr) {
     }
     const managerCardsArr = managersArr.map(managerData => {
         return `
-        <div class="card style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <div class="card-body">
-                h5 class="card-title">${managerData,name}</h5>
+                <h5> class="card-title">${managerData.name}</h5>
                 <p class="card-text">ID: ${managerData.id}</p>
                 <p class="card-text">Email: ${managerData.email}</p>
                 <p class="card-text">Office Number: ${managerData.office}</p>
@@ -71,9 +71,9 @@ function generateEngineerCards (engineerArr) {
     }
     const engineerCardsArr = engineerArr.map(engineerData => {
         return `
-        <div class="card style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <div class="card-body">
-                h5 class="card-title">${engineerData,name}</h5>
+                <h5> class="card-title">${engineerData.name}</h5>
                 <p class="card-text">ID: ${engineerData.id}</p>
                 <p class="card-text">Email: ${engineerData.email}</p>
                 <p class="card-text">Office Number: ${engineerData.office}</p>
@@ -93,9 +93,9 @@ function generateInternCards (internArr) {
     }
     const internCardsArr = internArr.map(internData => {
         return `
-        <div class="card style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <div class="card-body">
-                h5 class="card-title">${internData,name}</h5>
+                <h5> class="card-title">${internData.name}</h5>
                 <p class="card-text">ID: ${internData.id}</p>
                 <p class="card-text">Email: ${internData.email}</p>
                 <p class="card-text">Office Number: ${internData.office}</p>
