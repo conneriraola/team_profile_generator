@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/conneriraola/team_profile_generator#readme",
   "dependencies": {
-    "i": "^0.3.7"
+    "i": "^0.3.7",
+    "inquirer": "^8.2.4"
   }
 }

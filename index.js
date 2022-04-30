@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateHTML = require('./src/generateGTML.js')
-const Employee = require ('.lib/Employee');
-const Engineer = require ('.lib/Engineer');
-const Manager = require ('.lib/Manager');
-const Intern = require ('.lib/Intern');
+const generateHTML = require('./src/generateHTML.js')
+const Employee = require ('.lib/Employee.js');
+const Engineer = require ('.lib/Engineer.js');
+const Manager = require ('.lib/Manager.js');
+const Intern = require ('.lib/Intern.js');
 
 let managers = [];
 let engineers = [];
