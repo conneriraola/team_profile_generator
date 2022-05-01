@@ -10,7 +10,7 @@ function generateHTML (managers, engineers, interns) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Team</title>
     </head>
     <body>
@@ -52,7 +52,7 @@ function generateManagerCards (managersArr) {
         return `
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5> class="card-title">${managerData.name}</h5>
+                <h5 class="card-title">${managerData.name}</h5>
                 <p class="card-text">ID: ${managerData.id}</p>
                 <p class="card-text">Email: ${managerData.email}</p>
                 <p class="card-text">Office Number: ${managerData.office}</p>
@@ -73,7 +73,7 @@ function generateEngineerCards (engineerArr) {
         return `
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5> class="card-title">${engineerData.name}</h5>
+                <h5 class="card-title">${engineerData.name}</h5>
                 <p class="card-text">ID: ${engineerData.id}</p>
                 <p class="card-text">Email: ${engineerData.email}</p>
                 <p class="card-text">Office Number: ${engineerData.office}</p>
@@ -95,7 +95,7 @@ function generateInternCards (internArr) {
         return `
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5> class="card-title">${internData.name}</h5>
+                <h5 class="card-title">${internData.name}</h5>
                 <p class="card-text">ID: ${internData.id}</p>
                 <p class="card-text">Email: ${internData.email}</p>
                 <p class="card-text">Office Number: ${internData.office}</p>
